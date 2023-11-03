@@ -334,7 +334,7 @@ button.li-btn:hover {
 a.links, 
 a.links-2, 
 a.review-links {
-	background: #fed700 none repeat scroll 0 0;
+	background: #8fd1c9c4 none repeat scroll 0 0;
 	color: #242424;
 	display: inline-block;
 	font-family: Montserrat;
@@ -1734,7 +1734,7 @@ textarea:focus {
 }
 /*Header Bottom Menu*/
 .header-bottom {
-		background: #fed700;
+		background: #8fd1c9c4;
 		margin-bottom: 20px;
 }
 .hb-menu > nav > ul {
@@ -1791,7 +1791,7 @@ textarea:focus {
 .ht-menu > li:hover .ht-currency-trigger span::after, 
 .ht-menu > li:hover .ht-language-trigger span,
 .ht-menu > li:hover .ht-language-trigger span::after {
-	color: #fed700;
+	color: rgb(52, 45, 9);
 }
 .ht-menu > li .ht-setting-trigger span::after, 
 .ht-menu > li .ht-currency-trigger span::after, 
@@ -1923,7 +1923,7 @@ textarea:focus {
 }
 /*Sticky*/
 .header-sticky.sticky {
-	background: rgba(254,215,0,.8);
+	background: #8fd1c9c4(17, 131, 252, 0.8);
 	left: 0;
 	position: fixed;
 	right: 0;
@@ -2921,7 +2921,7 @@ textarea:focus {
 .footer-newsletter .form-group .btn {
 	position: absolute;
 	right: 0;
-	background: #fed700;
+	background: #ff0000;
 	border: none;
 	color: #242424;
 	height: 45px;

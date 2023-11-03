@@ -43,6 +43,8 @@ def sing_up(request):
                         user.save()
                         messages.warning(request, "User Created !!!")
                         return redirect('singin')
+                else:
+                    messages.warning(request, "Password Not Match!!! ")
             else:
                 messages.warning(request, "Enter a special character in password .")
 
@@ -76,7 +78,7 @@ def forget_pass(request):
                 user.set_password(password)
                 user.save()
                 update_session_auth_hash(request, user)
-                messages.success(request, 'User pass change success.')
+                messages.success(request, 'User password change successfully.')
                 return redirect('singin')
             else:
                 messages.error(request, 'email not matched.')
@@ -86,3 +88,11 @@ def forget_pass(request):
 def sing_out(request):
     auth.logout(request)
     return redirect('singin')
+
+def success(r):
+
+    return render(r,'success.html')
+
+def fail(r):
+
+    return render(r,'fail.html')
